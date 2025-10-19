@@ -162,18 +162,6 @@
             </li>
           
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/talk/" target="_self">
-                <i class="iconfont icon-speakernotes"></i>
-                <span>动态</span>
-              </a>
-            </li>
-          
-        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -238,18 +226,24 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/10/19/%E5%85%B3%E4%BA%8E%E6%8D%A2%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/" target="_self">
+          <img src="/img/2025101901.jpg" srcset="/img/loading.gif" lazyload alt="关于换零钱问题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/08/14/hello-world/" target="_self">
-          Hello World
+        <a href="/2025/10/19/%E5%85%B3%E4%BA%8E%E6%8D%A2%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/" target="_self">
+          关于换零钱问题
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/08/14/hello-world/" target="_self">
+      <a class="index-excerpt " href="/2025/10/19/%E5%85%B3%E4%BA%8E%E6%8D%A2%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/" target="_self">
         <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+          换零钱问题 我们有一些50美分，25美分，10美分，5美分和一美分的硬币，要把1美元换成零钱，一共有多少种不同的方式？  关于递归的解决思路对于这个问题，我们可以用递归的方式解决。把总数为a的现金换成n种硬币的不同方式的数目等于：现金a换成除去第一种硬币之外的所有其他硬币的不同方式数目，加上现金a - d换成所有种类硬币的不同方式数目，其中d是第一种硬币的币值 这乍一看很抽象，实际上很好理解。我们
         </div>
       </a>
 
@@ -257,12 +251,40 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2025-08-14 20:51" pubdate>
-              2025-08-14
+            <time datetime="2025-10-19 08:54" pubdate>
+              2025-10-19
             </time>
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/prog/" class="category-chain-item">prog</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/prog/">#prog</a>
+            
+          </div>
         
       </div>
     </article>
@@ -357,7 +379,7 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://v1.hitokoto.cn/?c=a&c=c&c=b',
+          url: 'https://v1.hitokoto.cn/?c=i&c=c',
           headers: {},
           dataType: 'json',
           success: function(result) {
@@ -381,7 +403,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/?c=a&amp;c=c&amp;c=b:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/?c=i&amp;c=c:', error);
             }
             typing(text);
           }
