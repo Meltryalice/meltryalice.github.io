@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.meltryalice.ink/img/2025122801.jpg">
 <meta property="article:published_time" content="2025-12-22T12:21:08.000Z">
-<meta property="article:modified_time" content="2025-12-28T13:28:16.014Z">
+<meta property="article:modified_time" content="2025-12-28T13:31:32.338Z">
 <meta property="article:author" content="Meltryalice">
 <meta property="article:tag" content="prog">
 <meta name="twitter:card" content="summary_large_image">
@@ -288,11 +288,11 @@
 </li>
 <li><p>或门<br>或门也有两个输入，一个输出。它的逻辑是有1出1,全0出0</p>
 </li>
-<li><p>反门<br>单输入，单输出，对输入取反。<br><img src="/img/20251217_111606.png" srcset="/img/loading.gif" lazyload alt="逻辑门"></p>
+<li><p>反门<br>单输入，单输出，对输入取反。<br><img src="/img/20251227_111606.png" srcset="/img/loading.gif" lazyload alt="逻辑门"></p>
 </li>
 </ol>
 <h2 id="半加器"><a href="#半加器" class="headerlink" title="半加器"></a>半加器</h2><p>将基本的供能件组合起来，就可以构造出更复杂的功能。半加器就是一个例子。</p>
-<p>半加器包括一个或门，两个与门和一个反门。这个半加器有两个输入信号A和B，以及两个输出S和C。当A和B都出1时，C出1，当A和B之1出1时，S出1。从半加器可以看出，由于延时的存在，这些输出可能在不同的时间产生，有关数字电路设计的的许多困难由延时产生。<br><img src="/img/20251217_113034.png" srcset="/img/loading.gif" lazyload alt="半加器"></p>
+<p>半加器包括一个或门，两个与门和一个反门。这个半加器有两个输入信号A和B，以及两个输出S和C。当A和B都出1时，C出1，当A和B之1出1时，S出1。从半加器可以看出，由于延时的存在，这些输出可能在不同的时间产生，有关数字电路设计的的许多困难由延时产生。<br><img src="/img/20251227_113034.png" srcset="/img/loading.gif" lazyload alt="半加器"></p>
 <h1 id="构造程序"><a href="#构造程序" class="headerlink" title="构造程序"></a>构造程序</h1><p>构造一个程序，使其能支持我们构造模拟连线的计算对象，这种对象能够“保持”信号。电路里的功能块用函数模拟，它们能严格维持信号之间的正确关系。</p>
 <p>模拟中用到的第一个基本元素是<code>make_wire</code>，它用于构造连线。例如，我们通过下面的方式构造出6条连线</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> a = <span class="hljs-title function_">make_wire</span>();<br><span class="hljs-keyword">const</span> b = <span class="hljs-title function_">make_wire</span>();<br><span class="hljs-keyword">const</span> c = <span class="hljs-title function_">make_wire</span>();<br><span class="hljs-keyword">const</span> d = <span class="hljs-title function_">make_wire</span>();<br><span class="hljs-keyword">const</span> e = <span class="hljs-title function_">make_wire</span>();<br><span class="hljs-keyword">const</span> s = <span class="hljs-title function_">make_wire</span>(); <br></code></pre></td></tr></table></figure>
